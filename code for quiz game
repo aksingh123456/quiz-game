@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+void start_game();
+void end_game();
+int z=0;
+int main(){
+    int user_input;
+    cout<<"*******************************************W E L C O M E*************************************************"<<endl;
+    cout<<"press 1 if you want to play: ";
+    cin>>user_input;
+    if(user_input==1){
+        start_game();
+    }
+    else{
+        end_game();
+    }
+    return 0;
+}
+void start_game(){
+    char answer;
+    cout<<"Q1.who was the first president of India: "<<endl;
+    cout<<"a) Dr.Rajendra Prasad"<<endl;
+    cout<<"b) Dr.SD Sharma "<<endl;
+    cout<<"c) Dr.APJ Abdul Kalam"<<endl;
+    cout<<"d) Dr.Manmohan Singh"<<endl;
+    cout<<"press a , b, c or d: "<<endl;
+    cin>>answer;
+    if(answer='a'){
+        cout<<"correct answer"<<endl;
+       z++;
+       cout<<"your score is :"<<z<<endl;
+    }
+    else{
+        cout<<"sorry! incorrect answer\n";
+    }
+   // char answer;
+    cout<<"Q2.who is the CEO of Google: "<<endl;
+    cout<<"a) Sundar Pichai"<<endl;
+    cout<<"b) Jeff Bejos "<<endl;
+    cout<<"c) Bill Gates"<<endl;
+    cout<<"d) Mukesh Ambani"<<endl;
+    cout<<"press a , b, c or d: "<<endl;
+    cin>>answer;
+    if(answer='a'){
+        cout<<"correct answer"<<endl;
+       z++;
+       cout<<"your score is :"<<z<<endl;
+    }
+    else{
+        cout<<"sorry! incorrect answer\n";
+    }
+    
+}
+void end_game(){
+    
+}
